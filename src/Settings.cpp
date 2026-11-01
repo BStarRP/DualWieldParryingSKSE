@@ -22,7 +22,7 @@ void Settings::DualWieldParrying::Load(CSimpleIniA& a_ini) {
     static const char* section = "DualWieldParrying";
 
     detail::get_value(a_ini, parryKey, section, "ParryKey",
-                      ";Code of key to use for parrying. See https://www.creationkit.com/index.php?title=Input_Script#DXScanCodes");
+                      ";DXScanCode. Default 45 = X. Mouse: 256 left, 257 right, 258 middle, 259 back thumb, 260 front thumb.");
     detail::get_value(
         a_ini, parryKey2, section, "ParryKey2",
         ";Optional second keybinding. Use a big number like 1000000 if you don't want a second keybinding.");
